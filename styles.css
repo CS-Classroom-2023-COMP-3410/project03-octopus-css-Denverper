@@ -293,10 +293,10 @@ a:hover {
 #footer {
     text-align: center; /* Center-align the footer content */
     padding-top: 8px; /* Add vertical padding */
-    padding-bottom: 20px; /* Add space below the footer content */
+    padding-bottom: 15px; /* Add space below the footer content */
     background-color: #006994; /* Dark blue background */
     color: white; /* White text color */
-    margin-top: 20px; /* Add space above the footer */
+    margin: 20px 0; /* Add space above the footer */
     border-radius: 10px; /* Round the corners of the footer */
     font-size: 0.9em;
 }
