@@ -1,0 +1,314 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #c8edf5;
+}
+
+/* Header */
+#header {
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #0579a1, #00aed3);
+    color: white;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    padding-left: 10px;
+    padding-right:10px;
+    border-radius: 15px;
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#header h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 2.8em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-shadow: black 0 1px 1px;
+}
+
+#header p {
+    margin: 10px 15px 0;
+    font-size: 1em;
+    font-style: italic;
+    text-align: left;
+}
+
+/* Main Content */
+#main-content {
+    padding: 25px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#main-content p {
+    color: #36377e;
+    font-size: 0.9em;
+}
+
+
+#main-content h2 {
+    color: #006994;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family:serif;
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+#main-content h2::after {
+    content: '';
+    display: block;
+    width: 45px; /* Adjust the width to control the length of the line */
+    height: 3px; /* Adjust the height to control the thickness */
+    background-color: #90e0ef; /* Matches the header's color */
+    margin-top: 8px;
+    position: absolute;
+    bottom: 1;
+    left: 0;
+}
+
+h3{
+    color: #006994;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family:serif;
+}
+
+
+h4, h5, h6 {
+    color: #006994;
+    font-weight: bolder;
+    font-family:serif;
+
+}
+
+h6 {
+    color: #006994;
+    font-weight: bolder;
+    font-family:serif;
+    font-size: 0.8em;
+}
+
+/* Lists */
+ul li::marker {
+    color: #00b4d8;
+}
+
+ul {
+    padding-left: 30px;
+    color: #36377e;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #36377e;
+    
+}
+
+ol {
+    padding-left: 30px;
+    color: #36377e;
+}
+
+ol li {
+    margin-bottom: 10px;
+    color: #36377e;
+}
+
+/* Important Text */
+.important {
+    font-weight: bold;
+    background-color: #90e0ef;
+    color: #006994;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+/* Links */
+a {
+    color: #12739b;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Quiz Section */
+#quiz-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #90e0ef; /* Light blue background */
+    border: 1px solid #91d4f7; /* Matching border color */
+    border-radius: 8px; /* Rounded corners for the entire section */
+    display: flex; /* Flexbox layout */
+    flex-direction: row; /* Arrange image and form side-by-side */
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Add spacing between elements */
+    gap: 20px; /* Space between items */
+    border-width: 0.4px;
+    border-color: lightgray;
+    margin-bottom: 30px;
+}
+
+#quiz-section h2 {
+    margin: 0; /* Remove default margin */
+    color: #006994; /* Dark blue text color */
+    font-size: 1.5em; /* Larger font size */
+    padding: 5px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1; /* Ensure it is above other elements */
+    position:absolute; /* Position relative to parent */
+    left: 10vh;
+    padding-bottom: 175px;
+}
+
+#quiz-section h2::after {
+    content: none; /* Remove the ::after pseudo-element */
+}
+
+/* Quiz Image */
+#quiz-section img {
+    display: block;
+    width: 80px; /* Fixed width */
+    height: 80px; /* Fixed height */
+    border: 5px solid #8200e6; /* Purple border */
+    border-radius: 0; /* Remove rounded corners */
+    position: relative;
+    left: 50px;
+    top: 30px;
+}
+
+/* Form Container */
+#quiz-section form {
+    width: 35%; /* Shrink form to fit next to the image */
+    text-align: left; /* Align form content to the left */
+    margin-right: 20px;
+}
+
+/* Form Labels */
+#quiz-section label {
+    display: block;
+    margin: 10px 0 5px; /* Add space between label and input */
+    font-weight: bold;
+    color: #060a62; /* Updated label text color */
+    font-size: 1em;
+}
+
+/* Form Inputs */
+#quiz-section input[type="text"] {
+    width: 100%; /* Make inputs full width of form container */
+    padding: 8px;
+    margin-bottom: 15px; /* Add spacing between inputs */
+    border: 2px solid #1e3e87; /* Dark blue border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1em; /* Standard font size */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 30px
+}
+
+/* Submit Button */
+#quiz-section input[type="submit"] {
+    display: block;
+    width: 120px; /* Full width of form container */
+    padding: 10px;
+    background-color: #006994; /* Dark blue button color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#quiz-section input[type="submit"]:hover {
+    background-color: #002244; /* Slightly darker shade on hover */
+}
+
+#species-table h2 {
+    color: #006994;
+    font-weight: bolder;
+    font-family:serif;
+    padding-bottom:12px;
+    position: relative;
+}
+
+#species-table h2::after {
+    content: '';
+    display: block;
+    width: 45px; /* Adjust the width to control the length of the line */
+    height: 3px; /* Adjust the height to control the thickness */
+    background-color: #00b4d8; /* Matches the header's color */
+    position: absolute;
+    margin-top:6px;
+    bottom: 1;
+    left: 0;
+}
+
+
+/* Table Element */
+#species-table table {
+    width: 100%;
+    border-collapse: collapse;
+    padding-top: 8px;
+}
+
+/* Table Headers */
+#species-table th {
+    background-color: #7f7f7f; /* Gray background for the header row */
+    color: white; /* White text color */
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Table Rows */
+#species-table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc; /* Subtle border */
+    font-size: 1em;
+    color: #1e3e87; /* Dark blue text for cells */
+    border-color: black;
+}
+
+/* Alternating Row Colors */
+#species-table tr:nth-child(even) {
+    background-color: #c8edf5; /* Light blue for even rows */
+}
+
+#species-table tr:nth-child(odd) {
+    background-color: white; /* White for odd rows */
+}
+
+/* Title Underline */
+#species-table h2 {
+    color: #1e3e87; /* Dark blue text */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    position: relative;
+}
+
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #006994;
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9em;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
