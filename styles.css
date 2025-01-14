@@ -240,6 +240,27 @@ a:hover {
     padding-top: 8px; /* Add space above the table */
 }
 
+
+#species-table h2 {
+    color: #006994;
+    font-weight: bolder;
+    font-family:serif;
+    padding-bottom:12px;
+    position: relative;
+}
+
+#species-table h2::after {
+    content: '';
+    display: block;
+    width: 45px; /* Adjust the width to control the length of the line */
+    height: 3px; /* Adjust the height to control the thickness */
+    background-color: #00b4d8; /* Matches the header's color */
+    position: absolute;
+    margin-top:6px;
+    bottom: 1;
+    left: 0;
+}
+
 /* Styling for the table headers */
 #species-table th {
     background-color: #999999; /* Gray background for the header row */
@@ -271,7 +292,8 @@ a:hover {
 /* Styling for the footer section */
 #footer {
     text-align: center; /* Center-align the footer content */
-    padding: 10px 0; /* Add vertical padding */
+    padding-top: 8px; /* Add vertical padding */
+    padding-bottom: 20px; /* Add space below the footer content */
     background-color: #006994; /* Dark blue background */
     color: white; /* White text color */
     margin-top: 20px; /* Add space above the footer */
