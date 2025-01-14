@@ -1,167 +1,166 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 0;
-    background-color: #c8edf5;
+    font-family: Arial, sans-serif; /* Set the default font */
+    margin: 20px; /* Add spacing around the page */
+    background-color: #c8edf5; /* Set a light blue background color */
 }
 
 /* Header */
+/* Styling for the main header of the page */
 #header {
-    text-align: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    background: linear-gradient(to right, #0579a1, #00aed3);
-    color: white;
-    padding-top: 43px;
-    padding-bottom: 43px;
-    padding-left: 10px;
-    padding-right:10px;
-    border-radius: 15px;
-    max-width: 100%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center-align the header content */
+    margin-bottom: 20px; /* Add spacing below the header */
+    background: linear-gradient(to right, #0579a1, #00aed3); /* Add a gradient background */
+    color: white; /* Set the text color to white for contrast */
+    padding: 43px 10px; /* Add vertical and horizontal padding */
+    border-radius: 15px; /* Round the corners of the header */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
 }
 
+/* Styling for the header title */
 #header h1 {
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 2.8em;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    letter-spacing: 1px;
-    text-shadow: black 0 1px 1px;
+    margin: 0 0 20px 0; /* Remove default margin and add spacing below */
+    font-size: 2.8em; /* Set the font size for emphasis */
+    font-family: 'Times New Roman', Times, serif; /* Use a serif font */
+    font-weight: bolder; /* Make the text bold */
+    letter-spacing: 1px; /* Add spacing between letters */
+    text-shadow: black 0 1px 1px; /* Add a black shadow for depth */
 }
 
+/* Styling for the header subtext */
 #header p {
-    margin: 10px 15px 0;
-    font-size: 1em;
-    font-style: italic;
-    text-align: left;
+    margin: 10px 15px 0; /* Add spacing around the subtext */
+    font-size: 1em; /* Set the font size for readability */
+    font-style: italic; /* Italicize the subtext */
+    text-align: left; /* Align the text to the left */
 }
 
 /* Main Content */
+/* Container for the main content area */
 #main-content {
-    padding: 25px;
-    max-width: 100%;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px; /* Add internal spacing */
+    background-color: white; /* White background for contrast */
+    border-radius: 8px; /* Round the corners for a smooth look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
 }
 
+/* Styling for paragraphs inside the main content */
 #main-content p {
-    color: #36377e;
-    font-size: 0.9em;
+    color: #36377e; /* Set dark blue text color for readability */
+    font-size: 0.9em; /* Slightly smaller text size */
 }
 
-
+/* Styling for h2 headings inside the main content */
 #main-content h2 {
-    color: #006994;
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-family:serif;
-    text-align: left;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    position: relative;
-    padding-bottom: 5px;
+    color: #006994; /* Dark blue for emphasis */
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-weight: bolder; /* Make the text bold */
+    font-family: serif; /* Use a serif font for elegance */
+    text-align: left; /* Align the heading text to the left */
+    font-size: 1.5em; /* Increase the font size */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    padding-bottom: 5px; /* Space below the heading for decoration */
+    position: relative; /* Allow positioning of child elements */
 }
 
+/* Underline effect for h2 headings */
 #main-content h2::after {
-    content: '';
+    content: ''; /* Create an empty content box */
     display: block;
-    width: 45px; /* Adjust the width to control the length of the line */
-    height: 3px; /* Adjust the height to control the thickness */
-    background-color: #90e0ef; /* Matches the header's color */
-    margin-top: 8px;
-    position: absolute;
-    bottom: 1;
-    left: 0;
+    width: 45px; /* Set the width of the underline */
+    height: 3px; /* Set the thickness of the underline */
+    background-color: #90e0ef; /* Light blue underline for contrast */
+    position: absolute; /* Position the underline relative to the heading */
+    bottom: 0; /* Align the underline at the bottom of the heading */
+    left: 0; /* Align the underline to the left */
 }
 
-h3{
-    color: #006994;
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-family:serif;
+/* Styling for h3 headings */
+h3 {
+    color: #006994; /* Dark blue color */
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-weight: bolder; /* Make the text bold */
+    font-family: serif; /* Use a serif font for headings */
 }
 
-
+/* Styling for h4, h5, and h6 headings */
 h4, h5, h6 {
-    color: #006994;
-    font-weight: bolder;
-    font-family:serif;
-
+    color: #006994; /* Consistent dark blue color for smaller headings */
+    font-weight: bolder; /* Bold font for emphasis */
+    font-family: serif; /* Use a serif font */
 }
 
+/* Specific styling for h6 headings */
 h6 {
-    color: #006994;
-    font-weight: bolder;
-    font-family:serif;
-    font-size: 0.8em;
+    font-size: 0.8em; /* Smaller font size */
 }
 
 /* Lists */
+/* Styling for list markers in unordered lists */
 ul li::marker {
-    color: #00b4d8;
+    color: #00b4d8; /* Bright blue marker color */
 }
 
+/* Styling for unordered lists */
 ul {
-    padding-left: 30px;
-    color: #36377e;
+    padding-left: 30px; /* Add spacing to the left of the list */
+    color: #36377e; /* Dark blue text color */
 }
 
+/* Styling for list items in unordered lists */
 ul li {
-    margin-bottom: 10px;
-    color: #36377e;
-    
+    margin-bottom: 10px; /* Add spacing between list items */
 }
 
+/* Styling for ordered lists */
 ol {
-    padding-left: 30px;
-    color: #36377e;
+    padding-left: 30px; /* Add spacing to the left of the list */
+    color: #36377e; /* Dark blue text color */
 }
 
+/* Styling for list items in ordered lists */
 ol li {
-    margin-bottom: 10px;
-    color: #36377e;
+    margin-bottom: 10px; /* Add spacing between list items */
 }
 
 /* Important Text */
+/* Styling for elements marked as important */
 .important {
-    font-weight: bold;
-    background-color: #90e0ef;
-    color: #006994;
-    padding: 2px 5px;
-    border-radius: 4px;
+    font-weight: bold; /* Make the text bold */
+    background-color: #90e0ef; /* Light blue background for emphasis */
+    color: #006994; /* Dark blue text color */
+    padding: 2px 5px; /* Add padding around the text */
+    border-radius: 4px; /* Round the corners of the element */
 }
 
 /* Links */
+/* Default styling for links */
 a {
-    color: #12739b;
-    text-decoration: none;
+    color: #12739b; /* Blue text color */
+    text-decoration: none; /* Remove underline */
 }
 
+/* Hover effect for links */
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Add underline when hovered */
 }
 
 /* Quiz Section */
+/* Styling for the quiz section container */
 #quiz-section {
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 20px; /* Space above the section */
+    padding: 20px; /* Add padding inside the section */
     background-color: #90e0ef; /* Light blue background */
-    border: 1px solid #91d4f7; /* Matching border color */
-    border-radius: 8px; /* Rounded corners for the entire section */
-    display: flex; /* Flexbox layout */
-    flex-direction: row; /* Arrange image and form side-by-side */
-    align-items: center; /* Vertically center content */
-    justify-content: space-between; /* Add spacing between elements */
-    gap: 20px; /* Space between items */
-    border-width: 0.4px;
-    border-color: lightgray;
-    margin-bottom: 30px;
+    border: 1px solid lightgray; /* Subtle border for definition */
+    border-radius: 8px; /* Rounded corners */
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Align items in a row */
+    align-items: center; /* Center-align items vertically */
+    justify-content: space-between; /* Distribute space evenly between elements */
+    gap: 20px; /* Add spacing between items */
 }
 
+/* Styling for the heading inside the quiz section */
 #quiz-section h2 {
     margin: 0; /* Remove default margin */
     color: #006994; /* Dark blue text color */
@@ -190,99 +189,76 @@ a:hover {
     top: 30px;
 }
 
-/* Form Container */
+/* Form Styling */
+/* Styling for the form inside the quiz section */
 #quiz-section form {
-    width: 35%; /* Shrink form to fit next to the image */
-    text-align: left; /* Align form content to the left */
-    margin-right: 20px;
+    width: 35%; /* Limit the width of the form */
+    text-align: left; /* Align the form content to the left */
+    margin-right: 20px; /* Add space to the right of the form */
 }
 
-/* Form Labels */
+/* Styling for the labels in the form */
 #quiz-section label {
-    display: block;
-    margin: 10px 0 5px; /* Add space between label and input */
-    font-weight: bold;
-    color: #060a62; /* Updated label text color */
-    font-size: 1em;
+    display: block; /* Make the labels block-level */
+    margin-bottom: 5px; /* Add spacing below labels */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #060a62; /* Dark blue text color */
 }
 
-/* Form Inputs */
+/* Styling for the text inputs in the form */
 #quiz-section input[type="text"] {
-    width: 100%; /* Make inputs full width of form container */
-    padding: 8px;
+    width: 100%; /* Full width of the form container */
+    padding: 8px; /* Add padding inside the input */
     margin-bottom: 15px; /* Add spacing between inputs */
-    border: 2px solid #1e3e87; /* Dark blue border */
-    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #1e3e87; /* Add a blue border */
+    border-radius: 8px; /* Round the corners */
     font-size: 1em; /* Standard font size */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-bottom: 30px
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
-/* Submit Button */
+/* Styling for the submit button */
 #quiz-section input[type="submit"] {
-    display: block;
-    width: 120px; /* Full width of form container */
-    padding: 10px;
-    background-color: #006994; /* Dark blue button color */
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1em;
-    cursor: pointer;
+    width: 120px; /* Set a fixed width for the button */
+    padding: 10px; /* Add padding inside the button */
+    background-color: #006994; /* Dark blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove the border */
+    border-radius: 8px; /* Round the corners */
+    font-size: 1em; /* Standard font size */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
 }
 
 #quiz-section input[type="submit"]:hover {
-    background-color: #002244; /* Slightly darker shade on hover */
+    background-color: #002244; /* Slightly darker blue on hover */
 }
-
-#species-table h2 {
-    color: #006994;
-    font-weight: bolder;
-    font-family:serif;
-    padding-bottom:12px;
-    position: relative;
-}
-
-#species-table h2::after {
-    content: '';
-    display: block;
-    width: 45px; /* Adjust the width to control the length of the line */
-    height: 3px; /* Adjust the height to control the thickness */
-    background-color: #00b4d8; /* Matches the header's color */
-    position: absolute;
-    margin-top:6px;
-    bottom: 1;
-    left: 0;
-}
-
 
 /* Table Element */
+/* Styling for the species table */
 #species-table table {
-    width: 100%;
-    border-collapse: collapse;
-    padding-top: 8px;
+    width: 100%; /* Make the table span the full width */
+    border-collapse: collapse; /* Remove gaps between table cells */
+    padding-top: 8px; /* Add space above the table */
 }
 
-/* Table Headers */
+/* Styling for the table headers */
 #species-table th {
-    background-color: #7f7f7f; /* Gray background for the header row */
-    color: white; /* White text color */
-    text-align: left;
-    padding: 10px;
-    font-weight: bold;
+    background-color: #999999; /* Gray background for the header row */
+    color: white; /* White text color for headers */
+    text-align: left; /* Align text to the left */
+    padding: 10px; /* Add padding inside header cells */
+    font-weight: bold; /* Make header text bold */
 }
 
-/* Table Rows */
+/* Styling for table rows */
 #species-table td {
-    text-align: left;
-    padding: 10px;
-    border: 1px solid #ccc; /* Subtle border */
-    font-size: 1em;
+    text-align: left; /* Align text to the left */
+    padding: 10px; /* Add padding inside table cells */
+    border: 1px solid black; /* Add black borders between cells */
+    font-size: 1em; /* Standard font size */
     color: #1e3e87; /* Dark blue text for cells */
-    border-color: black;
 }
 
-/* Alternating Row Colors */
+/* Alternating row colors for the table */
 #species-table tr:nth-child(even) {
     background-color: #c8edf5; /* Light blue for even rows */
 }
@@ -291,24 +267,14 @@ a:hover {
     background-color: white; /* White for odd rows */
 }
 
-/* Title Underline */
-#species-table h2 {
-    color: #1e3e87; /* Dark blue text */
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    font-weight: bold;
-    position: relative;
-}
-
-
 /* Footer */
+/* Styling for the footer section */
 #footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #006994;
-    color: white;
-    margin-top: 20px;
+    text-align: center; /* Center-align the footer content */
+    padding: 10px 0; /* Add vertical padding */
+    background-color: #006994; /* Dark blue background */
+    color: white; /* White text color */
+    margin-top: 20px; /* Add space above the footer */
+    border-radius: 10px; /* Round the corners of the footer */
     font-size: 0.9em;
-    border-radius: 10px;
-    padding-bottom: 20px;
 }
